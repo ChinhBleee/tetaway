@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TETAWAY</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- INTRO VIDEO -->
+    <div id="intro">
+      <video id="introVideo" autoplay muted>
+        <source src="/img/intro.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- ASK USER -->
+    <div id="askOverlay"></div>
+
+    <div id="askBox">
+      <div class="ask-mascot">
+        <video autoplay muted loop playsinline>
+          <source src="img/noinhieu.mp4" type="video/mp4" />
+        </video>
+        <div class="mascot-buttons">
+          <button onclick="goHome()">No</button>
+          <button onclick="openChat()">Yes</button>
+        </div>
+      </div>
+      <!-- <h2>Bạn có cần tôi giúp gì không? 😊</h2> -->
+    </div>
+    <div id="mainContent">
+      <!-- <div class="line">ahii</div> -->
+      <img src="img/line.png" class="line1" alt="" />
+      <!-- HEADER -->
+      <header class="header" id="mainHeader">
+        <div class="container">
+          <nav class="nav-menu" id="navMenu">
+            <ul>
+              <li><a href="#sanpham">Product</a></li>
+              <li><a href="#vechungtoi">About us</a></li>
+              <li><a href="#cachlam">Making</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#lienhe">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Logo -->
+          <div class="logo">
+            <a href="index.html"
+              ><img class="logo1" src="img/logo.png" alt="logo"
+            /></a>
+          </div>
+
+          <!-- Menu -->
+
+          <!-- Actions -->
+          <div class="header-actions">
+            <input
+              class="search"
+              placeholder="Search"
+              type="search"
+              name=""
+              id=""
+            />
+            <a href="#" class="btn-cart">🛒 Shopping cart</a>
+            <!-- <a href="#" class="btn-order">Đặt hàng Tết</a> -->
+
+            <button class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <img class="anhlogo" src="/img/logolinh.png" alt="" />
+      </section>
+      <div class="hr"></div>
+      <!-- ABOUT -->
+      <section id="vechungtoi" class="about">
+        <!-- <h2>Hương Vị Xanh – Hương Vị Tết</h2> -->
+        <p class="about-text">
+          TetAway takes Tet further—reimagining tradition through a modern lens.
+          From the familiar flavors of banh tet, each product becomes a bridge
+          connecting younger generations while introducing Vietnamese culture to
+          the world in a way that feels fresh, accessible, and authentic.
+        </p>
+        <section id="sanpham" class="products">
+          <!-- <h2 class="section-title">Các Loại Bánh Tét</h2> -->
+
+          <div class="product-grid">
+            <div class="product-card">
+              <img class="product-img" src="img/sanphamcam.png" alt="" />
+              <video
+                class="product-video"
+                class="product-video"
+                muted
+                loop
+                playsinline
+              >
+                <source
+                  class="video-product"
+                  src="/img/videocam.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <!-- <div class="product-info"> -->
+              <!-- <h3>Bánh Tét Nhân Thịt Heo</h3> -->
+              <!-- <p></p>
+              <strong>5$/1</strong> -->
+              <!-- </div> -->
+            </div>
+
+            <div class="product-card">
+              <img id="img1" src="img/sanphamtim.png" alt="" />
+              <video id="vid1" class="product-video" muted loop playsinline>
+                <source
+                  class="video-product"
+                  src="/img/videotim.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+            <div class="product-card">
+              <img id="img1" src="img/samphamxanh.png" alt="" />
+              <video id="vid1" class="product-video" muted loop playsinline>
+                <source
+                  class="video-product"
+                  src="/img/videoxanh.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+            <div class="product-card">
+              <img id="img1" src="img/sanphamtim.png" alt="" />
+              <video id="vid1" class="product-video" muted loop playsinline>
+                <source
+                  class="video-product"
+                  src="/img/videotim.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+            <div class="product-card">
+              <img id="img1" src="img/sanphamtim.png" alt="" />
+              <video id="vid1" class="product-video" muted loop playsinline>
+                <source
+                  class="video-product"
+                  src="/img/videotim.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+            <div class="product-card">
+              <img id="img1" src="img/sanphamtim.png" alt="" />
+              <video id="vid1" class="product-video" muted loop playsinline>
+                <source
+                  class="video-product"
+                  src="/img/videotim.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- <div class="hr"></div> -->
+      <!-- SẢN PHẨM -->
+      <div class="hr"></div>
+      <!-- WHY US - MARQUEE SCROLLING IMAGES (Unsplash) -->
+      <section class="why-us">
+        <!-- <h2 class="section-title">Why Choose Viet Tet Cakes?</h2> -->
+
+        <div class="marquee-wrapper">
+          <div class="marquee">
+            <img src="/img/a.png" alt="Fresh banana leaves" />
+            <img src="/img/aa.png" alt="Premium glutinous rice" />
+            <img src="/img/aaa.png" alt="Clean mung beans" />
+            <img src="/img/b.png" alt="Traditional Bánh Tét" />
+            <img src="/img/f.png" alt="Elegant Tet gift" />
+            <img src="/img/ff.png" alt="Authentic Vietnamese flavors" />
+            <img src="img/fff.png" alt="Fresh banana leaves" />
+            <img src="/img/h.png" alt="Premium glutinous rice" />
+            <img src="/img/hh.png" alt="Clean mung beans" />
+            <img src="/img/hhh.png" alt="Traditional Bánh Tét" />
+            <img
+              style="border-radius: 50px"
+              src="/img/m.png"
+              alt="Elegant Tet gift"
+            />
+            <img src="img/n.png" alt="Authentic Vietnamese flavors" />
+            <img src="img/nn.png" alt="Authentic Vietnamese flavors" />
+            <img
+              style="border-radius: 50px"
+              src="img/nnn.png"
+              alt="Authentic Vietnamese flavors"
+            />
+            <img src="img/t.png" alt="Authentic Vietnamese flavors" />
+            <img src="img/tt.png" alt="Authentic Vietnamese flavors" />
+            <img src="img/ttt.png" alt="Authentic Vietnamese flavors" />
+
+            <img src="/img/a.png" alt="Fresh banana leaves" />
+            <img src="/img/aa.png" alt="Premium glutinous rice" />
+            <img src="/img/aaa.png" alt="Clean mung beans" />
+            <img src="/img/b.png" alt="Traditional Bánh Tét" />
+            <img src="/img/f.png" alt="Elegant Tet gift" />
+            <img src="/img/ff.png" alt="Authentic Vietnamese flavors" />
+            <img src="img/fff.png" alt="Fresh banana leaves" />
+            <img src="/img/h.png" alt="Premium glutinous rice" />
+            <img src="/img/hh.png" alt="Clean mung beans" />
+            <img src="/img/hhh.png" alt="Traditional Bánh Tét" />
+            <img
+              style="border-radius: 50px"
+              src="/img/m.png"
+              alt="Elegant Tet gift"
+            />
+            <img src="img/n.png" alt="Authentic Vietnamese flavors" />
+            <img src="img/nn.png" alt="Authentic Vietnamese flavors" />
+            <img
+              style="border-radius: 50px"
+              src="img/nnn.png"
+              alt="Authentic Vietnamese flavors"
+            />
+            <img src="img/t.png" alt="Authentic Vietnamese flavors" />
+            <img src="img/tt.png" alt="Authentic Vietnamese flavors" />
+            <img src="img/ttt.png" alt="Authentic Vietnamese flavors" />
+          </div>
+        </div>
+      </section>
+      <div class="hr"></div>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">🌿 Bánh Tét Việt</div>
+          <p>Mang hương vị Tết truyền thống đến mọi nhà</p>
+          <p>
+            📍 Đà Nẵng, Việt Nam | 📞 0123 456 789 | 📧 contact@banhtetviet.vn
+          </p>
+          <p class="copyright">© 2026 Bánh Tét Việt. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </div>
+    <!-- FLOATING CHAT WIDGET WITH MASCOT -->
+    <div class="chat-widget">
+      <!-- Nút chat là hình mascot -->
+      <div class="chat-button" id="chatButton">
+        <img src="/img/logo.png" alt="Mascot" class="mascot-img" />
+        <span class="help-text">Bạn cần tôi giúp gì?</span>
+      </div>
+
+      <!-- Cửa sổ chat -->
+      <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <img src="/img/tetaway.png" alt="Mascot" class="chat-avatar-img" />
+            <!-- <h4>TETAWAY</h4> -->
+            <!-- <p>Trợ lý • Trả lời nhanh</p> -->
+          </div>
+          <div></div>
+          <button class="chat-close" id="chatClose">✕</button>
+        </div>
+        <div class="chat-bodycc">
+          <div class="chat-character">
+            <img id="characterImg" src="/img/logo.png" />
+          </div>
+
+          <div class="chat-bodyc">
+            <div class="chat-body" id="chatBody">
+              <div class="message-bot">
+                Xin chào! 👋<br />
+                Mình là mascot của TETAWAY.<br />
+                Bạn cần tư vấn gì về bánh tét hôm nay?
+              </div>
+            </div>
+
+            <!-- Quick Replies (câu hỏi mẫu) -->
+            <div class="quick-replies" id="quickReplies">
+              <button class="quick-btn" onclick="handleQuick('store')">
+                Why do you use the image of a soldier?
+              </button>
+              <button class="quick-btn" onclick="handleQuick('price')">
+                Giá bánh tét bao nhiêu?
+              </button>
+              <button class="quick-btn" onclick="handleQuick('ship')">
+                Ship toàn quốc không?
+              </button>
+              <button class="quick-btn" onclick="handleQuick('vegan')">
+                Bánh tét chay có không?
+              </button>
+              <button class="quick-btn" onclick="handleQuick('save')">
+                Cách bảo quản bánh tét?
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="Nhập tin nhắn của bạn..."
+            autocomplete="off"
+          />
+          <button id="chatSend">Gửi</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
