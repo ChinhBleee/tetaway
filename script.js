@@ -156,9 +156,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Bot trả lời ngẫu nhiên
     setTimeout(() => {
       const replies = [
-        "Cảm ơn bạn! Mình sẽ hỗ trợ ngay.",
-        "Bạn muốn đặt hàng hay tư vấn thêm ạ?",
-        "Ship toàn quốc trong 2-3 ngày nhé!",
+        "Thank you! I will support you right away 🙌✨",
+        "Would you like to place an order or need more consultation? 🛒💬",
+        "We offer nationwide delivery within 2–3 days 🚚📦⏱️!",
       ];
       addMessage(replies[Math.floor(Math.random() * replies.length)], "bot");
     }, 600);
@@ -220,34 +220,38 @@ function handleQuick(type) {
   let reply = "";
 
   if (type === "store") {
-    img.src = "img/store.png";
-    userText = "Why do you use the image of a soldier?";
+    img.src = "img/tetngu.png";
+    userText = "Why is the mascot a soldier?";
     reply =
-      "The image of the soldier in the story from the time of Nguyễn Huệ carries deep meaning. It represents not only war, but also distance and the longing for home. In a time when he could not return to reunite with his family during Tết Nguyên Đán, the soldier carried a piece of bánh tét with him as if he were carrying a part of his family and memories. The cake was not just food, but a symbol of love and a connection to home. For this reason, the soldier becomes the first symbol of “carrying Tết away” — a simple yet powerful image that reflects the journey of preserving tradition and emotional connection, no matter the distance.📍";
+      "The mascot is a soldier 🪖 because it clearly represents the core meaning behind the story of bánh tét 🍃🎋. During the time of Nguyễn Huệ ⚔️, soldiers had to leave their homes 🏡 and could not return during Tết Nguyên Đán 🎆. By carrying bánh tét with them 🎒, they were not only bringing food 🍽️, but also love ❤️, memories 📸, and a strong connection to their families 👨‍👩‍👧‍👦. For this reason, the soldier becomes a powerful symbol 💪 of being far from home 🌏 while still carrying a piece of it wherever they go ✨. As a mascot 🎭, the soldier represents not just a character, but the journey 🛤️, emotion 💖, and deeper meaning of “carrying Tết on the go” 🎊🚶‍♂️.";
   }
 
   if (type === "price") {
-    img.src = "img/price.png";
-    userText = "Giá bao nhiêu?";
-    reply = "Giá từ 45k - 60k 🎉";
+    img.src = "img/tethothoang.png";
+    userText = "Does TETAWAY have any exciting programs coming up?";
+    reply =
+      "Yes! TETAWAY is preparing several exciting programs for the upcoming season 🎉, including special holiday travel packages 🏝️, discounted combo deals for flights and hotels ✈️🏨, and unique cultural experience tours that allow travelers to explore local traditions and cuisine 🍜🎎, making it a perfect opportunity for customers to enjoy memorable trips with family and friends while saving money 💰✨";
   }
 
   if (type === "ship") {
-    img.src = "img/ship.png";
+    img.src = "img/tetcamco.png";
     userText = "TETAWAY journey was born";
-    reply = "🧧 TETAWAY – ON THE GO<br>Carry Tết. Anywhere.";
+    reply =
+      "The TETAWAY journey was born 🌍✨ as a vision to redefine the way people explore the world, bringing together innovation, convenience, and unforgettable travel experiences into one seamless platform 🚀✈️, and from its very first steps, it aimed to inspire travelers to step out of their comfort zones, discover hidden gems, and create lasting memories with loved ones 🏝️📸, while also offering smart solutions like personalized itineraries, exclusive deals, and cultural immersion programs that truly connect people with the destinations they visit 🎎🍜, and as the journey continues to grow, TETAWAY is committed to building a global community of passionate explorers who seek not only adventure but also meaningful connections and enriching experiences across different cultures and landscapes 🌐❤️🎒";
   }
 
   if (type === "vegan") {
-    img.src = "img/vegan.png";
-    userText = "Có bánh chay không?";
-    reply = "Có bánh tét chay 🌱";
+    img.src = "img/location.png";
+    userText = "TETAWAY bakery nearby";
+    reply =
+      "I have identified your location 📍, please follow my directions carefully 🧭✨!";
   }
 
   if (type === "save") {
-    img.src = "img/save.png";
-    userText = "Bảo quản thế nào?";
-    reply = "Để nơi khô ráo hoặc tủ lạnh ❄️";
+    img.src = "img/tetchicho.png";
+    userText = "Hii";
+    reply =
+      "Hello! 👋 I'm here to help you with any questions you have about bánh tét! 🎉 Whether it's about ingredients, storage tips, or where to find the best bánh tét in town, just ask away! 🍽️🎊";
   }
 
   // user message

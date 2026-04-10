@@ -183,6 +183,11 @@
     transparent
   );
 }
+.hr1 {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #000000, transparent);
+}
 .header-actions {
   position: relative;
 }
@@ -280,10 +285,24 @@ section {
     transform 0.4s ease,
     box-shadow 0.4s ease;
 }
+.product-card1 {
+  position: relative; /* Quan trọng: làm container */
+  overflow: hidden;
+  border-radius: 16px;
+  /* background: white; */
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); */
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
 
 .product-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.product-card1:hover {
+  transform: translateY(-12px);
+  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); */
 }
 .video-product {
 }
@@ -291,6 +310,14 @@ section {
 /* Ảnh và Video cùng kích thước, chồng lên nhau */
 .product-card img,
 .product-card video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  transition: opacity 0.4s ease;
+}
+.product-card1 img,
+.product-card1 video {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -365,10 +392,10 @@ section {
 
 /* ====================== FOOTER ====================== */
 .footer {
-  background: var(--dark);
+  background: black;
   color: white;
   text-align: center;
-  padding: 80px 20px 40px;
+  padding: 20px;
 }
 
 .footer-logo {
@@ -473,7 +500,12 @@ section {
   animation: marquee 45s linear infinite; /* Tốc độ phù hợp với 16 ảnh */
   width: max-content;
 }
-
+.marquee#brand {
+  display: flex;
+  gap: 15px;
+  animation: marquee 21s linear infinite; /* Tốc độ phù hợp với 16 ảnh */
+  width: max-content;
+}
 .marquee img {
   width: auto;
   height: 400px;
@@ -483,7 +515,28 @@ section {
   flex-shrink: 0;
   transition: transform 0.3s ease;
 }
-
+.marquee-wrapper#brand {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 1px;
+  background: #000000;
+  border-radius: 0px;
+  box-shadow: 0;
+}
+.marquee#brand img {
+  height: 10px;
+  width: auto;
+  border-radius: 0px;
+}
+.marquee#brandd img {
+  height: 20px;
+  width: auto;
+  border-radius: 0px;
+}
+.textband img:hover {
+  transform: scale(1.05);
+}
 .marquee img:hover {
   transform: scale(1.05);
 }
@@ -491,7 +544,7 @@ section {
 /* Animation chạy từ phải sang trái */
 @keyframes marquee {
   from {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   to {
     transform: translateX(-50%);
@@ -569,7 +622,7 @@ section {
 .chat-button {
   width: 180px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 35%;
   /* background: #8ad23d; */
   /* box-shadow: 0 8px 25px rgba(46, 125, 50, 0.35); */
   cursor: pointer;
@@ -585,6 +638,9 @@ section {
 .chat-button:hover {
   transform: scale(1.08);
   box-shadow: 0 12px 35px rgba(46, 125, 50, 0.5);
+}
+.imgproduct:hover {
+  transform: scale(1.05);
 }
 
 .mascot-img {
@@ -723,11 +779,11 @@ section {
 
 /* Quick Replies */
 .quick-replies {
-  padding: 14px 16px;
+  padding: 5px 6px;
   background: #f0f4f0;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 2px;
   border-top: 1px solid #eee;
 }
 
@@ -735,9 +791,9 @@ section {
   background: white;
   border: 1.5px solid var(--primary);
   color: var(--primary);
-  padding: 9px 15px;
+  padding: 5px 6px;
   border-radius: 25px;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.25s ease;
   white-space: nowrap;
@@ -905,4 +961,22 @@ section {
 #askBox.show {
   opacity: 1;
   transform: translate(-50%, -50%);
+}
+.textband {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 80px;
+  /* gap: 1px solid black; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+}
+.bandtext {
+  max-width: 35%;
+  font-size: 1.45rem;
+  line-height: 1.7;
+  color: #ffffff;
+  font-weight: 800;
+  text-align: left;
 }
